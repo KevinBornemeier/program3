@@ -1,0 +1,26 @@
+P3 CORRECTIONS
+
+IglooScore1.java fixes:
+
+	in function overallScore():
+		changed: if (score1 < score2)
+      			   s = score1;
+   			 else
+      			   s = score2;
+		to:	if (score1 < score2)
+      			   s = score2;
+   			 else
+      			   s = score1;
+
+IglooScore2.java fixes:
+
+	in function overallScore():
+		changed: s1 = 99
+			 s2 = 99
+		to: 	 s1 = score1
+			 s2 = score2
+
+	in main:
+		changed: args == null removed from if statement so that 100% coverage could be 		                 reached. 
+
+
